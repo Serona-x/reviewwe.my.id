@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami — RevieWWe</title>
+    <meta name="description" content="Tentang RevieWWe — portal ulasan dan review film independen berbahasa Indonesia.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <a href="index.html" class="header__logo">
+                    <svg class="header__logo-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z" />
+                    </svg>
+                    <div class="header__logo-text">Revie<span>WW</span>e</div>
+                </a>
+                <nav class="nav" id="mainNav">
+                    <a href="index.html" class="nav__link">Beranda</a>
+                    <a href="index.html#review" class="nav__link">Artikel</a>
+                    <a href="about.html" class="nav__link nav__link--active">Tentang</a>
+                </nav>
+                <div class="header__search">
+                    <button class="search-btn" id="searchBtn" aria-label="Cari">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.3-4.3" />
+                        </svg>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round">
+                            <path d="M3 12h18M3 6h18M3 18h18" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="nav-overlay" id="navOverlay"></div>
+    <div class="search-overlay" id="searchOverlay">
+        <button class="search-overlay__close" id="searchClose">✕</button>
+        <div class="search-overlay__inner">
+            <input type="text" class="search-overlay__input" id="searchInput"
+                placeholder="Cari artikel, review, berita...">
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="static-page">
+            <h1>Tentang RevieWWe</h1>
+            <p>RevieWWe adalah portal ulasan dan review film independen berbahasa Indonesia yang didirikan pada tahun
+                2024. Kami percaya bahwa setiap film layak mendapatkan ulasan yang jujur, mendalam, dan berbobot —
+                terlepas dari budget produksinya atau popularitas studio di belakangnya.</p>
+
+            <p>Tim penulis kami terdiri dari kritikus film berpengalaman dan pecinta sinema yang berdedikasi untuk
+                menghadirkan perspektif segar tentang film-film terbaru, baik dari Hollywood maupun sinema independen
+                dari seluruh dunia.</p>
+
+            <h2>Misi Kami</h2>
+            <p>Kami berkomitmen untuk:</p>
+            <ul>
+                <li>Menghadirkan ulasan film yang jujur dan tidak terpengaruh oleh tekanan komersial</li>
+                <li>Mempromosikan apresiasi terhadap sinema independen dan film-film dari berbagai budaya</li>
+                <li>Memberikan konteks dan analisis mendalam yang membantu pembaca memahami seni pembuatan film</li>
+                <li>Menjadi sumber terpercaya bagi pecinta film Indonesia untuk menemukan tontonan berikutnya</li>
+            </ul>
+
+            <h2>Tim Kami</h2>
+            <p>Tim RevieWWe terdiri dari kritikus film berpengalaman dan pecinta sinema yang berdedikasi. Dengan latar
+                belakang beragam dalam jurnalisme, studi film, dan industri kreatif, kami menghadirkan perspektif yang
+                kaya dan berimbang dalam setiap ulasan.</p>
+
+            <h2>Hubungi Kami</h2>
+            <p>Anda bisa menghubungi redaksi RevieWWe melalui email di <strong>redaksi@reviewwe.id</strong> atau melalui
+                akun media sosial kami di Twitter dan Instagram.</p>
+            <p>Untuk kerja sama dan partnership, silahkan hubungi <strong>bisnis@reviewwe.id</strong>.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div>
+                    <div class="footer__brand-name">Revie<span>WW</span>e</div>
+                    <p class="footer__brand-desc">Portal ulasan dan review film independen berbahasa Indonesia. Kami
+                        menghadirkan kritik mendalam, berita sinema terkini, dan perspektif unik tentang dunia
+                        perfilman.</p>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Navigasi</h4>
+                    <div class="footer__links">
+                        <a href="index.html" class="footer__link">Beranda</a>
+                        <a href="index.html#review" class="footer__link">Artikel</a>
+                        <a href="about.html" class="footer__link">Tentang Kami</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Lainnya</h4>
+                    <div class="footer__links">
+                        <a href="privacy.html" class="footer__link">Kebijakan Privasi</a>
+                        <a href="about.html" class="footer__link">Kontak</a>
+                        <a href="privacy.html" class="footer__link">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">&copy; 2026 RevieWWe. Semua hak dilindungi.</p>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social" aria-label="Twitter"><svg viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg></a>
+                    <a href="#" class="footer__social" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" />
+                            <circle cx="12" cy="12" r="5" />
+                            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
+                        </svg></a>
+                    <a href="#" class="footer__social" aria-label="YouTube"><svg viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
