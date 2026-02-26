@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Tidak Ditemukan — RevieWWe</title>
+    <meta name="description" content="Maaf, halaman yang Anda cari tidak dapat ditemukan di RevieWWe.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+    <meta http-equiv="refresh" content="10;url=index.html">
+    <style>
+        .error-section {
+            padding: 100px 20px;
+            text-align: center;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 20px;
+            text-shadow: 0 0 30px var(--accent-dim);
+        }
+
+        .error-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .error-text {
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            max-width: 500px;
+        }
+
+        .countdown-timer {
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .btn-home {
+            padding: 12px 24px;
+            background: var(--accent);
+            color: var(--bg-primary);
+            border-radius: var(--radius);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all var(--transition);
+        }
+
+        .btn-home:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            color: var(--bg-primary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <a href="index.html" class="header__logo">
+                    <svg class="header__logo-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z" />
+                    </svg>
+                    <div class="header__logo-text">Revie<span>WW</span>e</div>
+                </a>
+
+                <nav class="nav" id="mainNav">
+                    <a href="index.html" class="nav__link">Beranda</a>
+                    <a href="index.html#review" class="nav__link">Artikel</a>
+                    <a href="about.html" class="nav__link">Tentang</a>
+                </nav>
+
+                <div class="header__search">
+                    <button class="search-btn" id="searchBtn" aria-label="Cari">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.3-4.3" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section class="error-section">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Halaman Hilang dari Radar</h1>
+            <p class="error-text">
+                Sepertinya halaman yang Anda cari telah dihapus atau dipindahkan.
+                Anda akan diarahkan kembali ke halaman utama dalam <span class="countdown-timer"
+                    id="countdown">10</span> detik.
+            </p>
+            <a href="index.html" class="btn-home">Kembali ke Beranda Sekarang</a>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div>
+                    <div class="footer__brand-name">Revie<span>WW</span>e</div>
+                    <p class="footer__brand-desc">Portal ulasan dan review film independen berbahasa Indonesia. Kami
+                        menghadirkan kritik mendalam, berita sinema terkini, dan perspektif unik tentang dunia
+                        perfilman.</p>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Navigasi</h4>
+                    <div class="footer__links">
+                        <a href="index.html" class="footer__link">Beranda</a>
+                        <a href="index.html#review" class="footer__link">Artikel</a>
+                        <a href="about.html" class="footer__link">Tentang Kami</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Lainnya</h4>
+                    <div class="footer__links">
+                        <a href="privacy.html" class="footer__link">Kebijakan Privasi</a>
+                        <a href="about.html" class="footer__link">Kontak</a>
+                        <a href="privacy.html" class="footer__link">Disclaimer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">&copy; 2026 RevieWWe. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Redirect countdown logic
+        let timeLeft = 10;
+        const countdownElement = document.getElementById('countdown');
+
+        const countdownTimer = setInterval(() => {
+            timeLeft--;
+            if (countdownElement) {
+                countdownElement.textContent = timeLeft;
+            }
+
+            if (timeLeft <= 0) {
+                clearInterval(countdownTimer);
+                window.location.href = 'index.html';
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
