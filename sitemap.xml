@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Halaman Utama -->
   <url>
     <loc>https://reviewwe.my.id/</loc>
     <lastmod>2026-03-01</lastmod>
@@ -9,7 +8,6 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Halaman Statis -->
   <url>
     <loc>https://reviewwe.my.id/about.html</loc>
     <lastmod>2026-02-24</lastmod>
@@ -24,7 +22,6 @@
     <priority>0.4</priority>
   </url>
 
-  <!-- Halaman Artikel -->
   <url>
     <loc>https://reviewwe.my.id/artikel/Oscar.html</loc>
     <lastmod>2026-02-24</lastmod>
@@ -61,7 +58,7 @@
   </url>
 
   <url>
-    <loc>https://reviewwe.my.id/artikel/The%20Brutalist.html</loc>
+    <loc>https://reviewwe.my.id/artikel/The-Brutalist.html</loc>
     <lastmod>2026-02-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
