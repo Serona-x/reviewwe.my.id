@@ -305,7 +305,38 @@
                         <!-- POPULAR_END -->
                     </div>
                 </div>
+<script>
+  function getInputValue() {
+    return document.body.getAttribute("data-online-id");
+  }
+  
+  (function (d) {
+    const unverifiedData = JSON.stringify({
+    custom_action_user_token: getInputValue(),
+    });
 
+    var BASE_URL = "https://chat.onechat.dev";
+    var s = d.createElement("script");
+    s.src = BASE_URL + "/sdk.js";
+    s.defer = true;
+    s.async = true;
+    d.body.appendChild(s);
+    s.onload = function () {
+      window.WebSDK.setUnverifiedData(unverifiedData);
+      window.WebSDK.run({
+        baseUrl: BASE_URL,
+        id: "b9932c4f-dcf2-49e1-bc1a-94ad0a55e476",
+        language: "id",
+        style: {
+          zIndex: "2147483000",
+        },
+        configOpenLink: "BLANK",
+        autoContinueChat: false,
+        autoStartChat: false,
+      });
+    };
+  })(document);
+</script>
                 <!-- Categories -->
                 <div class="widget">
                     <h3 class="widget__title">Kategori</h3>
